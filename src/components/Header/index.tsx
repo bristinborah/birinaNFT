@@ -82,7 +82,7 @@ const NavMenu = (
               </Link>
               {link.isBeta ? <Label text="BETA" /> : ""}
               {link.hasModal ? (
-                <span className="popup bg-secondary text-white rounded-md p-4">
+                <span className="popup bg-secondary rounded-md p-4 text-white">
                   {link.modal?.text}
                 </span>
               ) : (
@@ -104,7 +104,9 @@ const HeaderLg = (props: IHeaderProps) => {
       <div className="container flex justify-between gap-8 px-5 ">
         <div className="flex items-center gap-5">
           <h1 className="text-4xl">
-            <Link href="/" className="color"><strong>ADA</strong> RAFFLES</Link>
+            <Link href="/" className="color">
+              <strong>ADA</strong> RAFFLES
+            </Link>
           </h1>
         </div>
         <NavMenu linksList={linksList} />
@@ -187,7 +189,9 @@ const HeaderMdSm = (props: IHeaderProps) => {
                 )}
               </button>
               <h1 className="text-2xl">
-                <Link href="/"><strong>Ada</strong> Raffles</Link>
+                <Link href="/">
+                  <strong>Ada</strong> Raffles
+                </Link>
               </h1>
             </div>
             <nav>
