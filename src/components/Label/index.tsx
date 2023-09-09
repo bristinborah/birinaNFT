@@ -1,6 +1,6 @@
 type ILabelProps = {
   text: string;
-  className: string;
+  className?: string;
 };
 
 const Label = (props: ILabelProps) => {
