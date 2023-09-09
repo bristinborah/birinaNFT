@@ -15,7 +15,7 @@ const UpcomingAuctions = () => {
           className="my-4 h-[4px] w-full shrink-0 bg-white"
         />
         <h2 className="mb-6 scroll-m-20 pb-2 text-white text-center text-5xl font-bold tracking-tight transition-colors first:mt-0">
-          Upcoming Auctions
+          Upcoming Raffles
         </h2>
         <div className="container flex max-w-6xl flex-col justify-between gap-10 lg:flex-row">
           <AuctionCard

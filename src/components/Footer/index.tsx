@@ -1,4 +1,7 @@
+import Link from "next/link";
+
 import CustomGoogleForm from "@/components/Forms/CustomGoogleForm";
+import Label from "@/components/Label";
 
 const Footer = () => {
   return (
@@ -13,23 +16,29 @@ const Footer = () => {
           <h3 className="mb-2 font-bold text-white">Links</h3>
           <ul className="mt-2 space-y-2">
             <li>
-              <a href="https://venom.network/">Twitter</a>
+              <Link href="https://twitter.com/ada_raffles">Twitter</Link>
             </li>
-            <li>
+            {/* <li>
               <a href="https://venom.network/tasks">Discord</a>
-            </li>
-            <li>
-              <a href="https://venom.network/faucet">Git Book</a>
-            </li>
-            <li>
-              <a href="https://medium.com/@Venom_network_/mastering-the-venom-testnet-a-comprehensive-guide-to-interacting-with-dapps-nfts-and-defi-7aa90abcce93">
+            </li> */}
+            <li className="flex self-center md:justify-end sm:justify-start">
+              <Link
+                style={{
+                  opacity: "0.5",
+                  textDecoration: "none",
+                  cursor: "default",
+                }}
+                href={{}}
+                className="disabled:pointer-events-none disabled:opacity-50"
+              >
                 Guide
-              </a>
+              </Link>
+              <Label className="ml-2" text="BETA" />
             </li>
           </ul>
         </div>
       </div>
-      <div className="container mt-10 p-0 flex justify-between">
+      <div className="container mt-10 flex justify-between p-0">
         <span className="text-white">Privacy Policy</span>
         <span className="text-white">© 2023 ADA RAFFLES.</span>
         <span className="text-white">Cookies</span>

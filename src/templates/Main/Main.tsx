@@ -190,7 +190,7 @@ const Main = (props: IMainProps) => {
             url: "#",
             hasModal: true,
             modal: {
-              text: "We are delighted to offer creators a unique opportunity to showcase and monetize their digital masterpieces.",
+              text: "The first revenue-sharing raffles and auction platform on Cardano give back a huge percentage of earned fees to holders, contributors.",
             },
           },
         ]}
