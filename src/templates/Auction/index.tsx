@@ -51,6 +51,7 @@ const Auction = (props: AuctionProps) => {
     true
   );
 
+  // @ts-ignore
   const [participants, setParticipants] = useState<
     Array<Participant> | undefined
   >([
@@ -381,14 +382,14 @@ const Auction = (props: AuctionProps) => {
               </div>
               {participants && (
                 <div>
-                  <h3 className="text-2xl text-white mt-6 font-bold">
+                  <h3 className="mt-6 text-2xl font-bold text-white">
                     Participants:
                   </h3>
-                  <ul className="participants_list mt-9 bg-white rounded-md p-2.5 pr-4">
+                  <ul className="participants_list mt-9 rounded-md bg-white p-2.5 pr-4">
                     {participants?.map((participant, index) => (
                       <li
                         key={index}
-                        className="participant flex justify-between text-black font-bold"
+                        className="participant flex justify-between font-bold text-black"
                       >
                         <p className="text-md">{participant.address}</p>
                         <p className="text-md">{participant.tickets}</p>
