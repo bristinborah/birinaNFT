@@ -13,9 +13,8 @@ const CustomGoogleForm = () => {
     try {
       if (isValidEmail()) {
         setError(false);
-
         await fetch(
-          `https://docs.google.com/forms/d/e/1FAIpQLSd3zha5Z6os00OS75QNHry6P4ZH2UvLtlNTepirsB0FlNOoDA/formResponse?${new URLSearchParams(
+          `https://docs.google.com/forms/d/e/1FAIpQLScZ6vX0UhGzWASDS4oPZO9vSkdQ6diH-BQGZu-0VAq_XpgoDQ/formResponse?${new URLSearchParams(
             {
               emailAddress: email,
               submit: "Submit",
