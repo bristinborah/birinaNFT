@@ -27,6 +27,9 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@martifylabs/mesh-react": "^1.1.1",
+    "@meshsdk/core": "^1.5.2",
+    "@meshsdk/react": "^1.1.7",
     "bignumber.js": "^9.1.1",
     "browserslist": "^4.6.3",
     "everscale-inpage-provider": "^0.3.61",

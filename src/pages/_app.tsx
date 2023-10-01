@@ -1,21 +1,23 @@
 import "../styles/global.css";
-
 import type { AppProps } from "next/app";
-import { Montserrat } from "next/font/google";
+import { MeshProvider } from "@meshsdk/react";
+import Head from "next/head";
+import Navbar from "@/components/Header";
 
-const lexend = Montserrat({ subsets: ["latin"] });
+import Footer from "@/components/Footer";
 
-const MyApp = ({ Component, pageProps }: AppProps) => {
+export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <style jsx global>{`
-        html {
-          font-family: ${lexend.style.fontFamily};
-        }
-      `}</style>
+    <MeshProvider>
+      <Head>
+        <title>Marketplace Starter by Mesh SDK</title>
+        <meta name="description" content="Marketplace Starter by Mesh SDK" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="https://meshjs.dev/favicon/favicon-32x32.png" />
+      </Head>
+      <Navbar/>
       <Component {...pageProps} />
-    </>
+     
+    </MeshProvider>
   );
-};
-
-export default MyApp;
+}

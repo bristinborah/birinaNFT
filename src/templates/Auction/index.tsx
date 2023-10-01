@@ -238,7 +238,7 @@ const Auction = (props: AuctionProps) => {
       <div className="container px-5">
         <div className="grid gap-10 lg:grid-cols-3">
           <div>
-            <h2 className="text-4xl font-bold text-white">Ada Raffles</h2>
+            <h2 className="text-4xl font-bold text-white">Birina NFTs</h2>
             <div className="mt-5 flex gap-3">
               <div className="focus:ring-ring hover:bg-secondary/80 text-secondary-foreground inline-flex items-center rounded-full border px-5 py-1.5 text-sm font-semibold text-white transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2">
                 PFP
@@ -248,22 +248,15 @@ const Auction = (props: AuctionProps) => {
               </div>
             </div>
             <p className="text-md mb-5 mt-10 text-white">
-              The first revenue-sharing raffles and auction platform on Cardano
-              give back a huge percentage of earned fees to holders,
-              contributors.
+            We have designed contemporary solutions to tackle the issues. Our key functionalities include the development of our own eCommerce platform (https://birina.net), leveraging established eCommerce giants like Flipkart and Amazon to drive quick revenues, and establishing hubs or clusters of weavers across Assam equipped with modern tools and techniques.
             </p>
             <p className="text-md mb-5 text-white">
-              With its new platform, collectors have a chance to raffle their
-              NFTs, and artists have enormous opportunities to showcase their
-              masterpieces to the world.
+            Next, in order to tackle the issue of the authenticity associated with Gamosa, we are venturing into the possibilities of blockchain. Through blockchain, we are planning to offer traceability features that allow you to verify the authenticity of a Gamosa.
             </p>
-            <p className="text-md mb-10 text-white">
-              Participation in the first Tap Tools raffle grants users a
-              whitelist spot in the future "Degens Time" collection.
-            </p>
+           
             <div className="flex space-x-5">
               <a
-                href="https://twitter.com/ada_raffles"
+                href="https://twitter.com/birinahandmade"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
@@ -332,7 +325,7 @@ const Auction = (props: AuctionProps) => {
           <div className="self-start text-start">
             <div className="grid w-full items-start gap-5">
               <h3 className="text-2xl font-bold text-white">
-                Ticket Costs: 10 ADA
+               Enter Your Order Id
               </h3>
               <input
                 type="number"
@@ -351,50 +344,22 @@ const Auction = (props: AuctionProps) => {
                 } focus-visible:ring-ring ring-offset-background text-primary-foreground inline-flex h-11 w-full items-center justify-center rounded-md bg-emerald-400 px-8 text-2xl font-bold text-white transition-colors hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50`}
                 onClick={bet}
               >
-                BUY
+                Claim Your NFT
               </button>
-              <button
-                type="button"
-                disabled={isClaimDisabled}
-                className={`${
-                  isClaimDisabled
-                    ? "disabled:pointer-events-none disabled:opacity-50"
-                    : ""
-                } focus-visible:ring-ring ring-offset-background button_claim text-primary-foreground hover:bg-primary/90 inline-flex h-11 w-full items-center justify-center rounded-md px-8 text-2xl font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2`}
-              >
-                CLAIM
-              </button>
+             
               {currentWinner && <p id="copyText">{currentWinner}</p>}
-              <div className="flex justify-between max-[430px]:flex-col max-[430px]:gap-y-5">
-                <h2 className="text-lg font-bold">
-                  <span className="text-white">Tickets All</span>
-                  <span className="ml-3 rounded rounded-md bg-black px-5 py-3 text-white">
-                    555
-                    {endTime && <b>{endTime} UTC</b>}
-                  </span>
-                </h2>
-                <h2 className="text-lg font-bold">
-                  <span className="text-white">Remaining</span>
-                  <span className="ml-3 rounded rounded-md bg-black px-5 py-3 text-white">
-                    38
-                  </span>
-                </h2>
-              </div>
+            
               {participants && (
                 <div>
                   <h3 className="mt-6 text-2xl font-bold text-white">
-                    Participants:
+                  Previous Claims
                   </h3>
                   <ul className="participants_list mt-9 rounded-md bg-white p-2.5 pr-4">
-                    {participants?.map((participant, index) => (
-                      <li
-                        key={index}
-                        className="participant flex justify-between font-bold text-black"
-                      >
-                        <p className="text-md">{participant.address}</p>
-                        <p className="text-md">{participant.tickets}</p>
+                  <li>
+                       <p className="text-md">23TDBA7DSH4EROHCRX52JN7KYMDPUB5N6QZR2RGPDR6GHI4MXWCVFSBNAKZ</p>
+                       <p className="text-md">6TDBA7DSH4EROHCRX52JN7KYMDPUB5N6QZR2RGPDR6GHI4MXWCV6OW3CQ4</p>
                       </li>
-                    ))}
+                  
                   </ul>
                 </div>
               )}

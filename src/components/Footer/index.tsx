@@ -16,7 +16,7 @@ const Footer = () => {
           <h3 className="mb-2 font-bold text-white">Links</h3>
           <ul className="mt-2 space-y-2">
             <li>
-              <Link href="https://twitter.com/ada_raffles">Twitter</Link>
+              <Link href="https://twitter.com/birinahandmade">Twitter</Link>
             </li>
             {/* <li>
               <a href="https://venom.network/tasks">Discord</a>
@@ -40,7 +40,7 @@ const Footer = () => {
       </div>
       <div className="container mt-10 flex justify-between p-0">
         <span className="text-white">Privacy Policy</span>
-        <span className="text-white">© 2023 ADA RAFFLES.</span>
+        <span className="text-white">© 2023. Birina Marketplace </span>
         <span className="text-white">Cookies</span>
       </div>
     </footer>
